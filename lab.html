@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>hatt's website</title>
+
+    <style>
+        body { /*Background Image*/
+            margin: 0;
+            height: 110vh;
+            background-image: url('images/evil_dead.jpg'); 
+            background-size: cover;
+            background-repeat: repeat;
+            background-position: center;
+            font-family: 'Comic Sans MS';
+        }
+    
+    
+
+        .image-box-container { /*Body background*/
+            justify-content: center;
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .image-box{  /*setup for each individual image box*/
+            width: 300px;
+            height: 380px;
+            text-align: center;
+        }
+
+        .image-box img{  /* settings for the image that is going to go into image box*/
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+
+        }
+
+        .image-box a { /*getting rid of the underlie in the links*/
+    text-decoration: none;
+    }
+
+        .image-box span{ /* setup for text under images*/
+            display: block;
+            margin-top: 10px;
+            color: rgb(127, 170, 72);
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+
+        .image-box-wrapper { /*Parent container to center the image container*/
+            height: 100vh;                 
+            display: flex;
+            justify-content: center;      
+            align-items: center;          
+        }
+    </style>
+
+</head>
+
+<body style>
+    <h1 style="text-align: center; color: rgb(174, 0, 255)">
+        hatt's website :D
+    </h1>
+    <h2 style="text-align: center; color: rgb(255, 94, 0)">
+        Welcome to my page ⊂(◉‿◉)つ here you can find everything about me :)
+    </h2>
+    <h1 style="text-align: center; color: rgb(21, 255, 0);"> 
+        The big three
+
+    </h1>
+
+
+
+
+
+    <div class ="image-box-wrapper">
+        <div class="image-box-container">
+            <div class="image-box">
+                <a href="metal.html">
+                    <img src="Images/death.jpg">
+                    <span>My Fav Music ( ✜︵✜ )</span>
+                </a>
+            </div>
+ 
+            <div class="image-box">
+                <a href="horror.html">
+                    <img src="Images/horror.jpg">
+                    <span>Film (^_^)</span>
+                </a>
+            </div>
+
+            <div class="image-box">
+                <a href="metal.html">
+                    <img src="Images/souls.jpg">
+                    <span>Video Games  (◕ᴥ◕ʋ)</span>
+                </a>
+        </div>
+    </div>
+
+
+</body>
+</html>
