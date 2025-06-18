@@ -53,7 +53,7 @@ def reset_all_tasks():
 def clear_all_tasks(confirm: bool):
     if confirm:
         tasks.clear()
-        return {"message": "All tasks wiped!"}
+        return {"message": "All tasks wiped"}
     raise HTTPException(status_code=400, detail="confirmation needed")
 
 # completion status
