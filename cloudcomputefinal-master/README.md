@@ -55,7 +55,7 @@ Make sure you have installed:
 ### How to run
 
 - Set up the Database: (`mysql -u root -p < Script.sql`)
-- Start Fast API Backend from Root: (`uvicorn main:app --reload`)
+- Bat Service from Root: (`.\bat_services.bat`)
 - Run the Client Interface: (`python driver.py`)
 
 ### Services
