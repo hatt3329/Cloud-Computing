@@ -13,7 +13,7 @@ def connect_to_db():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Ilovedad247$!",
+            password="",
             database="my_vegetable_shop"
         )
     except mysql.connector.Error as err:
@@ -141,3 +141,4 @@ def delete_product(product_id: int, session_data: dict = Depends(get_session_dat
     finally:
         cursor.close()
         mydb.close()
+
