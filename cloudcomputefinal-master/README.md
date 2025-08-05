@@ -55,6 +55,7 @@ Make sure you have installed:
 ### How to run
 
 - Set up the Database: (`mysql -u root -p < Script.sql`)
+- Note: If you have a password on your version of the database, you will have to edit the password section of the 'connect_to_db` section of each service
 - Bat Service from Root: (`.\bat_services.bat`)
 - Run the Client Interface: (`python driver.py`)
 
