@@ -9,7 +9,7 @@ def connect_to_db():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Ilovedad247$!",
+            password="",
             database="my_vegetable_shop"
         )
     except mysql.connector.Error as err:
@@ -67,3 +67,4 @@ def filter_products(category: str = Query(None), min_price: float = Query(None),
     finally:
         cursor.close()
         mydb.close()
+
