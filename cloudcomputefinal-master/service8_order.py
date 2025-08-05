@@ -10,7 +10,7 @@ def connect_to_db():
         return mysql.connector.connect(
             host="localhost",
             user="root",
-            password="Ilovedad247$!",
+            password="",
             database="my_vegetable_shop"
         )
     except mysql.connector.Error as err:
@@ -66,3 +66,4 @@ async def get_customer_orders(session_data: dict = Depends(get_session_data)):
     finally:
         cursor.close()
         mydb.close()
+
